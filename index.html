@@ -22,7 +22,21 @@
                     </div>
                 </div>
             </header>
+            <section class="gender">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>Choose a gender:</h2>
+                    <form role="form">
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id='male' value='female' ng-click="gender.heShe = 'he'; gender.hisHer = 'his'; gender.himHer = 'him'">Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id='female' value='female' ng-click="gender.heShe = 'she'; gender.hisHer = 'her'; gender.himHer = 'her'">Female
+                        </label>
+                    </form>
+                </div>
+            </section>
             <section class="userInput">
+
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Please Provide the Following Words:</h2>
@@ -63,8 +77,8 @@
                 </div>
             </section>
             <section class="mainText">
-                <p><span class="highlight">{{data.femaleName}}</span> was a <span class="highlight">{{data.jobTitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated <span class="highlight">{{data.tediousTask}}</span> and <span class="highlight">{{data.dirtyTask}}</span>. So, <span class="highlight">{{data.femaleName}}</span> met with her life mentor <span class="highlight">{{data.celebrity}}</span> who told her to learn <span class="highlight">{{data.uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span class="highlight">{{data.uselessSkill}}</span> so she studied programming instead.</p>
-                <p>What a great decision! With her new skills, <span class="highlight">{{data.femaleName}}</span> built a(n) <span class="highlight">{{data.adjective}}</span> robot named <span class="highlight">{{data.obnoxiousCelebrity}}</span> that not only loved <span class="highlight">{{data.dirtyTask}}</span> but did it <span class="highlight">{{data.hugeNumber | number}}</span> times faster. </p>
+                <p><span class="highlight">{{data.femaleName}}</span> was a <span class="highlight">{{data.jobTitle}}</span> who loved technology. Although {{gender.heShe}} loved parts of {{gender.hisHer}} job, {{gender.heShe}} absolutely hated <span class="highlight">{{data.tediousTask}}</span> and <span class="highlight">{{data.dirtyTask}}</span>. So, <span class="highlight">{{data.femaleName}}</span> met with {{gender.hisHer}} life mentor <span class="highlight">{{data.celebrity}}</span> who told {{gender.himHer}} to learn <span class="highlight">{{data.uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span class="highlight">{{data.uselessSkill}}</span> so {{gender.heShe}} studied programming instead.</p>
+                <p>What a great decision! With {{gender.hisHer}} new skills, <span class="highlight">{{data.femaleName}}</span> built a(n) <span class="highlight">{{data.adjective}}</span> robot named <span class="highlight">{{data.obnoxiousCelebrity}}</span> that not only loved <span class="highlight">{{data.dirtyTask}}</span> but did it <span class="highlight">{{data.hugeNumber | number}}</span> times faster. </p>
 
             </section>
         </div>
