@@ -114,7 +114,7 @@
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="form-group">
-                                <input type="number" name="hugeNumber" placeholder='huge number' ng-model="data.hugeNumber" ng-pattern="/^(\d)+$/">
+                                <input type="number" name="hugeNumber" placeholder='huge number' ng-model="data.hugeNumber" ng-pattern="\d">
                                 <div class='errorMsg' ng-if="madInput.hugeNumber.$touched" ng-messages="madInput.hugeNumber.$error">
                                     <div ng-message="required">Please enter a number</div>
                                     <div ng-message="pattern">Only digits, please!</div>
@@ -132,7 +132,11 @@
             <section class="mainText" ng-show="inputHide && madInput.$valid">
                 <p><span class="highlight">{{data.name}}</span> was a <span class="highlight">{{data.jobTitle}}</span> who loved technology. Although {{gender.heShe}} loved parts of {{gender.hisHer}} job, {{gender.heShe}} absolutely hated <span class="highlight">{{data.tediousTask}}</span> and <span class="highlight">{{data.dirtyTask}}</span>. So, <span class="highlight">{{data.name}}</span> met with {{gender.hisHer}} life mentor <span class="highlight">{{data.celebrity}}</span> who told {{gender.himHer}} to learn <span class="highlight">{{data.uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span class="highlight">{{data.uselessSkill}}</span> so {{gender.heShe}} studied programming instead.</p>
                 <p>What a great decision! With {{gender.hisHer}} new skills, <span class="highlight">{{data.name}}</span> built a(n) <span class="highlight">{{data.adjective}}</span> robot named <span class="highlight">{{data.obnoxiousCelebrity}}</span> that not only loved <span class="highlight">{{data.dirtyTask}}</span> but did it <span class="highlight">{{data.hugeNumber | number}}</span> times faster. </p>
-
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <button class="btn btn-default btn-lg reset" type="button" ng-click="reset()">Start Over</button>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

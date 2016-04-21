@@ -41,6 +41,7 @@ button {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 2rem;
 }
 
 
@@ -73,7 +74,7 @@ Content styles (Main Module)
 
 .userInput h2 {
     text-align: left;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .userInput input {
