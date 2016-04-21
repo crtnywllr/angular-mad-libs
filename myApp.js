@@ -11,4 +11,5 @@ angular.module('myApp', ['ngMessages'])
             console.log($scope.madInput);
             $scope.inputHide = true;
         }
+
     });
