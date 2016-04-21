@@ -7,9 +7,6 @@ angular.module('myApp', ['ngMessages'])
         $scope.inputHide = false;
 
         $scope.submit = function () {
-            console.log($scope.data);
-            console.log($scope.madInput);
             $scope.inputHide = true;
         }
-
     });
