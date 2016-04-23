@@ -117,7 +117,7 @@
                                 <input type="number" name="hugeNumber" placeholder='huge number' ng-model="data.hugeNumber" ng-pattern="\d">
                                 <div class='errorMsg' ng-if="madInput.hugeNumber.$touched" ng-messages="madInput.hugeNumber.$error">
                                     <div ng-message="required">Please enter a number</div>
-                                    <div ng-message="pattern">Only digits, please!</div>
+                                    <div ng-message="number">Only digits, please!</div>
                                 </div>
                             </div>
                         </div>
